@@ -1,100 +1,101 @@
-body {
-  font-family: "Poppins", sans-serif;
-  margin: 50px 50px 0 50px;
-  background-color: #FAF0E4;
-  display: flex;
-  flex-direction: column;
-  min-height: 95vh;
-}
-.main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-      grid-template-rows: 50px 270px 200px;
-      gap: 50px;
-  flex: 1;
-}
-.logo{
-  height: 165px;
-}
-.card{
-  grid-column: span 1;
-}
-.right{
-  float: right;
- 
-}
-.left{
-  float: left;
-}
-.tile-image{
-  height: 200px;
-margin: 30px;
-  float: left;
-}
 
-h1 {
-  font-size: 5rem;
-  grid-column: span 2;
-  clear: both;
-  position: relative;
-  top: 50px;
-  margin: 50px;
-}
-span{
- color: #9BCDD2;
-}
-span:hover{
-  color: #ff8d8d;
-}
-footer {
-  clear: both;
-  text-align: right;
-  color: #9BCDD2;
-  flex: 1;
-  margin-top: 30px;
-  background-color: #FFDEDE;
-}
-
-header{
-
-  background-color: #FFDEDE;
-  height: 170px;
-  display: inline-block;
-  margin-bottom: 50px;
-}
-@media(max-width:680px)
-{
-  .main {
-    display: flex;
-    flex-direction: column;
+.flag{
+    height: 600px;
+    width: 900px;
+    background-color: #ce1126;
   }
-  
-  .logo {
-    height: 165px;
-  }
-
-  h1 {
-    font-size: 3.5rem;
+  p{
     text-align: center;
   }
-
-  .card {
-    width: 100%;
-    display: block;
-    margin-bottom: 30px;
-    text-align: justify;
+  div.flag>p{
+    color: white;
+    font-size: 70px;
+    
   }
-
-  .card img {
-    margin-bottom: 10px;
-    width: 70%;
-   position: relative;
-   left: -50px;
-    display: inline;
-    object-fit: cover;
+  div.flag>div{
+    background-color: #002868;
+    height: 50%;
+    position: relative;
+    top: 5%;
   }
-  *{
-    flex: 1;
+  div.flag>div>div{
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    position: absolute;
+    left: 350px;
+    top: 50px;
   }
-
-}
+  div>div>p
+  {
+    font-size: 60px
+  }
+  @media (max-width: 850px){
+    .flag{
+      height: 300px;
+      width: 450px;
+      background-color: #ce1126;
+    }
+    p{
+      text-align: center;
+    }
+    div.flag>p{
+      color: white;
+      font-size: 35px;
+      
+    }
+    div.flag>div{
+      background-color: #002868;
+      height: 50%;
+      position: relative;
+      top: 5%;
+    }
+    div.flag>div>div{
+      border-radius: 100%;
+      height: 100px;
+      width: 100px;
+      background-color: white;
+      position: absolute;
+      left: 175px;
+      top: 25px;
+    }
+    div>div>p
+    {
+      font-size: 30px
+    }
+  }
+  @media (max-width: 450px){
+    .flag{
+      height: 150px;
+      width: 225px;
+      background-color: #ce1126;
+    }
+    p{
+      text-align: center;
+    }
+    div.flag>p{
+      color: white;
+      font-size: 17.5px;
+      
+    }
+    div.flag>div{
+      background-color: #002868;
+      height: 50%;
+      position: relative;
+      top: 5%;
+    }
+    div.flag>div>div{
+      border-radius: 100%;
+      height: 50px;
+      width: 50px;
+      background-color: white;
+      position: absolute;
+      left: 175px;
+      top: 25px;
+    }
+    div>div>p
+    {
+      font-size: 15px
+    }
+  }
